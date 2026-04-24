@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns="http://datacite.org/schema/kernel-4"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://datacite.org/schema/kernel-4 https://schema.datacite.org/meta/kernel-4.4/metadata.xsd">
+
+    <!-- Required: Identifier
+         The Kaggle upload does not have a DOI, so the Kaggle URL is used as the
+         persistent identifier for this dataset record. -->
+    <identifier identifierType="URL">https://www.kaggle.com/datasets/mojtaba142/hotel-booking</identifier>
+
+    <!-- Required: Creators (original authors of the dataset) -->
+    <creators>
+        <creator>
+            <creatorName nameType="Personal">Antonio, Nuno</creatorName>
+            <givenName>Nuno</givenName>
+            <familyName>Antonio</familyName>
+            <affiliation>Instituto Universitário de Lisboa (ISCTE-IUL), Lisbon, Portugal</affiliation>
+        </creator>
+        <creator>
+            <creatorName nameType="Personal">Almeida, Ana de</creatorName>
+            <givenName>Ana</givenName>
+            <familyName>Almeida</familyName>
+            <affiliation>Instituto Universitário de Lisboa (ISCTE-IUL), Lisbon, Portugal</affiliation>
+        </creator>
+        <creator>
+            <creatorName nameType="Personal">Nunes, Luis</creatorName>
+            <givenName>Luis</givenName>
+            <familyName>Nunes</familyName>
+            <affiliation>Instituto Universitário de Lisboa (ISCTE-IUL), Lisbon, Portugal</affiliation>
+        </creator>
+    </creators>
+
+    <!-- Required: Titles -->
+    <titles>
+        <title xml:lang="en">Hotel Booking</title>
+        <title titleType="Subtitle" xml:lang="en">Hotel booking demand datasets (Data in Brief, 2019)</title>
+    </titles>
+
+    <!-- Required: Publisher (the platform where this version is hosted) -->
+    <publisher>Kaggle</publisher>
+
+    <!-- Required: Publication Year -->
+    <publicationYear>2020</publicationYear>
+
+    <!-- Required: Resource Type -->
+    <resourceType resourceTypeGeneral="Dataset">Tabular dataset (CSV)</resourceType>
+
+    <!-- Subjects / Keywords (from Kaggle tags + dataset domain) -->
+    <subjects>
+        <subject xml:lang="en">Data Analytics</subject>
+        <subject xml:lang="en">Data Visualization</subject>
+        <subject xml:lang="en">Exploratory Data Analysis</subject>
+        <subject xml:lang="en">Hotels and Accommodations</subject>
+        <subject xml:lang="en">Binary Classification</subject>
+        <subject xml:lang="en">hotel booking</subject>
+        <subject xml:lang="en">booking cancellation</subject>
+        <subject xml:lang="en">revenue management</subject>
+        <subject xml:lang="en">tourism</subject>
+    </subjects>
+
+    <!-- Contributors -->
+    <contributors>
+        <contributor contributorType="DataCurator">
+            <contributorName nameType="Personal">Mojtaba</contributorName>
+            <affiliation>Kaggle (user: mojtaba142)</affiliation>
+        </contributor>
+    </contributors>
+
+    <!-- Dates -->
+    <dates>
+        <date dateType="Collected">2015-07-01/2017-08-31</date>
+        <date dateType="Issued">2020-01-01</date>
+        <date dateType="Available">2014-10-17/2017-09-14</date>
+    </dates>
+
+    <!-- Language -->
+    <language>en</language>
+
+    <!-- Sizes -->
+    <sizes>
+        <size>119390 rows x 36 columns</size>
+        <size>25.11 MB</size>
+    </sizes>
+
+    <!-- Formats -->
+    <formats>
+        <format>text/csv</format>
+    </formats>
+
+    <!-- Version -->
+    <version>1</version>
+
+    <!-- Rights / License (as stated on Kaggle: Data files © Original Authors) -->
+    <rightsList>
+        <rights xml:lang="en">Data files © Original Authors</rights>
+    </rightsList>
+
+    <!-- Descriptions -->
+    <descriptions>
+        <description descriptionType="Abstract" xml:lang="en">
+            This dataset contains 119,390 observations of hotel bookings for a city hotel and a
+            resort hotel. Each observation represents a hotel booking with an arrival date
+            between 1 July 2015 and 31 August 2017, including bookings that effectively arrived
+            and bookings that were canceled. Since this is real hotel data, all data elements
+            pertaining to hotel or customer identification were removed by the original authors.
+            Four columns — name, email, phone-number and credit_card — have been artificially
+            generated and added to this Kaggle version of the dataset and are NOT real.
+            The data is originally from the article "Hotel Booking Demand Datasets" by
+            Nuno Antonio, Ana Almeida and Luis Nunes, published in Data in Brief, Volume 22,
+            February 2019.
+        </description>
+        <description descriptionType="Methods" xml:lang="en">
+            The original data were extracted from the Property Management Systems (PMS) of
+            two hotels in Portugal. All personally identifying information was removed by the
+            authors. For this Kaggle upload, synthetic (fake) values were added in the columns
+            name, email, phone-number and credit_card for demonstration and educational purposes.
+        </description>
+        <description descriptionType="TechnicalInfo" xml:lang="en">
+            Single CSV file (hotel_booking.csv, 25.11 MB). 119,390 rows and 36 columns.
+            Variables include: hotel, is_canceled, lead_time, arrival_date_year,
+            arrival_date_month, arrival_date_week_number, arrival_date_day_of_month,
+            stays_in_weekend_nights, stays_in_week_nights, adults, children, babies, meal,
+            country, market_segment, distribution_channel, is_repeated_guest,
+            previous_cancellations, previous_bookings_not_canceled, reserved_room_type,
+            assigned_room_type, booking_changes, deposit_type, agent, company,
+            days_in_waiting_list, customer_type, adr, required_car_parking_spaces,
+            total_of_special_requests, reservation_status, reservation_status_date,
+            name, email, phone-number, credit_card. Missing values: country (488),
+            children (4), agent (~16.3k), company (~112.6k).
+        </description>
+        <description descriptionType="Other" xml:lang="en">
+            Kaggle metadata — Usability: 10.00; Expected update frequency: Never;
+            Tags: Data Analytics, Data Visualization, Exploratory Data Analysis,
+            Hotels and Accommodations, Binary Classification.
+        </description>
+    </descriptions>
+
+    <!-- Geographic Locations (two hotels in Portugal, per the original article) -->
+    <geoLocations>
+        <geoLocation>
+            <geoLocationPlace>Portugal (city hotel and resort hotel)</geoLocationPlace>
+        </geoLocation>
+    </geoLocations>
+
+</resource>
